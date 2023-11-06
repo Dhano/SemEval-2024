@@ -44,6 +44,7 @@ We employ a transformer-based model to model the EFR task. We provide 4 models t
 The results reported in the paper are achieved on the full dataset and hence would not be achieved by the dataset provided in this folder. However you can run the codes by following these steps:
 1. Run the Dataloaders for ERC and EFR tasks respectively to get the necessary pickle files.
 2. Run the train_*model* file where *model* can be one of "erc_mmn", "efr_tx", "multitask", "cascade_efr_erc", "cascade_erc_efr" and "cascade_ercT_efr".
+3. trained model are present at https://drive.google.com/drive/folders/1FkgagykjOvP3NgNzcMFwTbMbuXvV2R-p?usp=sharing
 
 ### Running the code for custom data
 Since our model uses [BERT](https://arxiv.org/pdf/1810.04805.pdf) embeddings as utterance reprsentation, first you'll need to generate these BERT embeddings for your data. After you have a dictionary mapping for your utterances to embeddings, you'll need to change the paths in the ERC and EFR dataloaders. Specifically, the paths for training file, testing file and embedding files needs to be changed. After executing the teh dataloaders you'll get the necessary pickle files to run the models.
