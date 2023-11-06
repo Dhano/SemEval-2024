@@ -1,0 +1,107 @@
+lr 
+1e-6 1.9755
+1e-5 1.9571
+1e-4 1.9000
+2e-4 1.88
+1e-3 2.6748
+
+
+-------Epoch 8 2e-4-------
+
+
+9it [02:23, 15.91s/it]
+Average Loss =  tensor([1.8448], device='cuda:2', grad_fn=<DivBackward0>)
+
+
+***VALIDATION (7)***
+
+
+1it [00:13, 13.42s/it]
+/DATA1/dhananjay/data/cs779/test/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/DATA1/dhananjay/data/cs779/test/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/DATA1/dhananjay/data/cs779/test/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         9
+           1       0.00      0.00      0.00        73
+           2       0.00      0.00      0.00        18
+           3       0.00      0.00      0.00        54
+           4       0.00      0.00      0.00        35
+           5       0.51      1.00      0.68       292
+           6       0.00      0.00      0.00        48
+           7       0.00      0.00      0.00        41
+
+    accuracy                           0.51       570
+   macro avg       0.06      0.12      0.08       570
+weighted avg       0.26      0.51      0.35       570
+
+Confusion Matrix: 
+ [[  0   0   0   0   0   9   0   0]
+ [  0   0   0   0   0  73   0   0]
+ [  0   0   0   0   0  18   0   0]
+ [  0   0   0   0   0  54   0   0]
+ [  0   0   0   0   0  35   0   0]
+ [  0   0   0   0   0 292   0   0]
+ [  0   0   0   0   0  48   0   0]
+ [  0   0   0   0   0  41   0   0]]
+  8%|██████████           
+
+
+
+
+torch.Size([40, 15, 2304])
+torch.Size([40, 15, 1536])
+
+
+Task 1--------------------------------------------------------------------------------------------
+Original Model
+-------Epoch 21-------
+
+
+9it [04:08, 27.57s/it]
+Average Loss =  tensor([1.8660], device='cuda:2', grad_fn=<DivBackward0>)
+
+
+***VALIDATION (20)***
+
+
+1it [00:26, 26.18s/it]
+/DATA1/dhananjay/data/cs779/test/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/DATA1/dhananjay/data/cs779/test/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/DATA1/dhananjay/data/cs779/test/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1469: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        10
+           1       0.00      0.00      0.00        89
+           2       0.00      0.00      0.00        23
+           3       0.00      0.00      0.00        62
+           4       0.00      0.00      0.00        40
+           5       0.53      1.00      0.69       378
+           6       0.00      0.00      0.00        61
+           7       0.00      0.00      0.00        51
+
+    accuracy                           0.53       714
+   macro avg       0.07      0.12      0.09       714
+weighted avg       0.28      0.53      0.37       714
+
+Confusion Matrix: 
+ [[  0   0   0   0   0  10   0   0]
+ [  0   0   0   0   0  89   0   0]
+ [  0   0   0   0   0  23   0   0]
+ [  0   0   0   0   0  62   0   0]
+ [  0   0   0   0   0  40   0   0]
+ [  0   0   0   0   0 378   0   0]
+ [  0   0   0   0   0  61   0   0]
+ [  0   0   0   0   0  51   0   0]]
+ 21%|█████████████████████████▌                                                                                                | 21/100 [1:36:54<6:03:11, 275.85s/it]
+
+
+
+
+
